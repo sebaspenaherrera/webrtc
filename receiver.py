@@ -102,8 +102,8 @@ async def run(pc, signaling):
     print("Closing connection")
 0
 async def main():
-    #signaling = TcpSocketSignaling("127.0.0.1", 20000)
-    signaling = TcpSocketSignaling("192.168.133.135", 20000)
+    signaling = TcpSocketSignaling("127.0.0.1", 20000)
+    #signaling = TcpSocketSignaling("192.168.159.201", 20000)
 
     configuration = RTCConfiguration(iceServers=ice_servers)
     pc = RTCPeerConnection(configuration=configuration)

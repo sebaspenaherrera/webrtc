@@ -150,10 +150,11 @@ async def setup_webrtc_and_run(ip_address, port, camera_id, stats: Stats, iceSer
         await pc.close()
 
 async def main():
-    #ip_address = "127.0.0.1" # Ip Address of Remote Server/Machine
-    ip_address = "192.168.133.135"
+    ip_address = "127.0.0.1" # Ip Address of Remote Server/Machine
+    #ip_address = "192.168.133.135"
+    #ip_address = "192.168.133.247"
     port = 20000
-    camera_id =  1 # Change this to the appropriate camera ID
+    camera_id = 0 # Change this to the appropriate camera ID
     stats = Stats()
     await setup_webrtc_and_run(ip_address, port, camera_id, stats, iceServers=ice_servers)
 
